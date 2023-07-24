@@ -433,6 +433,16 @@ public class TextToSpeechModule extends ReactContextBaseJavaModule {
         }
     }
 
+    @ReactMethod
+    public void addListener(String eventName) {
+        // Keep: Required for RN built in Event Emitter Calls.
+    }
+
+    @ReactMethod
+    public void removeListeners(double count) {
+        // Keep: Required for RN built in Event Emitter Calls.
+    }
+
     /**
      * called on React Native Reloading JavaScript
      * https://stackoverflow.com/questions/15563361/tts-leaked-serviceconnection
